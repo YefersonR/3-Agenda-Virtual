@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:ital,wght@1,200&display=swap');
+
+*{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
+}
+body
+{
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    height: 89vh;
+}
+.newcontact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+    border-radius: 25px;
+    background: #66ac9d;
+    margin: 20px 0;
+    padding: 15px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 70%;
+}
+.newcontact box-icon{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+
+}
+.form input{
+    padding: 5px;
+    border: none;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #666666;
+    border-radius: 5px;
+    color: #fafafa;
+    background: none;
+}
+::placeholder{
+    color: #fafafa;
+
+}
+.form input:focus{
+    outline: none;
+    
+}
+.form button{
+    border-radius: 10px;
+    border: none;
+    color: #fafafa;
+    background: #282357;
+    padding: 10px;
+    width: 150px;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    transition: all .4s ease;
+    cursor: pointer;
+}
+.form button:hover{
+    background: #37308a;
+    
+}
+/*Listado*/
+
+.contacts{
+    width: 60%;
+    height: 100%;
+    padding: 20px;
+    margin: auto 20px;
+    overflow: auto;
+    box-shadow: 0 0 5px 1px rgba(102, 172, 157,0.8);
+}
+
+.container{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.head{
+    background-color: #66ac9d;
+    border-radius: 1px;
+    color: #fafafa;
+    margin: 5px;
+    padding: 5px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+li{
+    cursor: pointer;
+}
+.contact-info{
+    display: flex;
+    flex-direction: column-reverse;
+}
